@@ -6,19 +6,20 @@ export default class Demo extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('logo', 'assets/phaser3-logo.png');
+    this.load.image('logo', 'assets/title.png');
   }
 
   create() {
-    const logo = this.add.image(400, 70, 'logo');
+    const title = this.add.image(943, 500, 'logo');
 
     this.tweens.add({
-      targets: logo,
-      y: 350,
+      targets: title,
+      y: 475,
       duration: 1500,
       ease: 'Sine.inOut',
       yoyo: true,
       repeat: -1
     });
   }
+
 }
